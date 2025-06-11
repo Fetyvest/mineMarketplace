@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
+
+:root {
+    --font-family: "Liter", sans-serif;
+    --color: #d0ff00;
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img {
+    width: 50px;
+}
+
+.logo-text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    transition: all 0.5s;
+    font-size: clamp(0.063rem, -0.225rem + 9.2vw, 1.5rem);
+}
+
+.logo-text:hover {
+    color: var(--color);
+}
+
+@media(max-width: 550px) {
+    .logo-img {
+        max-width: 50px;
+        width: calc(20px + 5vw);
+    }
+}

@@ -1,0 +1,44 @@
+.greetings {
+    height: 100vh;
+    background: -webkit-linear-gradient(139deg, #7f0000,#7f0000,#7f3f00,#7f7f00,#7f7f00);
+}
+
+.greetings__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greetings__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 25px;
+    color: white;
+    font-family: var(--font-family);
+}
+
+.greetings__title {
+    font-size: clamp(1.563rem, 1.298rem + 4.237vw, 4.688rem);
+    font-weight: 600;
+    text-shadow: 3px 3px 3px gray;
+}
+
+.greetings__text {
+    font-size: clamp(0.5rem, 0.415rem + 1.356vw, 1.5rem);
+}
+
+.greetings__text a {
+    color: dodgerblue;
+    font-weight: 600;
+}
+
+.greetings__warning {
+    font-size: clamp(0.412rem, 0.342rem + 1.136vw, 1.25rem);
+    background-color: #00000099;
+    border-radius: 2px;
+    padding: 2px 5px;
+    color: red;
+}
